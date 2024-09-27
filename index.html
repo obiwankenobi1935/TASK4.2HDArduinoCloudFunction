@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LED Control Panel</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>LED Control Panel</h1>
+
+        <!-- Blue LED -->
+        <div class="led-container">
+            <h3>Blue LED</h3>
+            <div id="unact" class="led led-off"></div>
+            <div id="act" class="led led-on" style="display: none;"></div>
+            <button class="toggle-btn">Toggle Blue</button>
+        </div>
+
+        <!-- Green LED -->
+        <div class="led-container">
+            <h3>Green LED</h3>
+            <div id="unact1" class="led led-off"></div>
+            <div id="act1" class="led led-on" style="display: none;"></div>
+            <button class="toggle-btn1">Toggle Green</button>
+        </div>
+
+        <!-- Red LED -->
+        <div class="led-container">
+            <h3>Red LED</h3>
+            <div id="unact2" class="led led-off"></div>
+            <div id="act2" class="led led-on" style="display: none;"></div>
+            <button class="toggle-btn2">Toggle Red</button>
+        </div>
+    </div>
+</body>
+</html>
